@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home-</a>
+            <a href="Productos.html">Productos-</a>
+            <a href="Pedidos.html">Pedidos-</a>
+            <a href="Galeria_Clientes.html">Galeria Clientes-</a>
+            
+        </nav>
+    </header>
+    <main>
+        <h3>Contacto</h3>
+
+
+            <h3>Deja tus datos personales</h3>
+            <div>
+                <label for="fullName">Edad</label>
+                <input id="age" type="number" name="edad" max="99">
+            </div>
+            <div>
+                <label for="fullName">Nombre y Apellido</label>
+                <input placeholder="Escribir tus datos" id="fullName" name="fullname" type="text" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input name="email" id="email" type="email" placeholder="ejemplo@gmail.com" required>
+            </div>
+            <h3>Contanos mas sobre tu problema</h3>
+            <div>
+                <label for="interest">¿En que podemos ayudarte?</label>
+                <select name="interest" id="interest">
+                    <option value="Email Marketing">Email Marketing</option>
+                    <option value="Venta Online">Venta Online</option>
+                    <option value="Asesoramientro">Asesoramientro</option>
+                    <option value="Otro">Otro</option>
+                </select>
+            </div>
+            <div>
+                <label for="comments">¿Qué necesitas?</label>
+                <textarea placeholder="Comentarios" name="comments" id="comments" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <label>
+                    <input name="spam_me" value="true" type="checkbox"> Desea recibir el Newsletter?
+                </label>
+            </div>
+            <button type="submit">
+                Enviar
+            </button>
+        </form>
+        <hr>
+        <h3>Form de Suscripción</h3>
+        <form action="http://prueba-local.test/"metod="POST">
+            <div>
+                <input name="email" id="sub" type="email" placeholder="ejemplo@ejemplo.com">
+                <button type="submit">Suscribirse</button>
+            </div>
+        </form>
+    </main>
+
+    <br></br>
+    <footer>
+        Copyright Solari José Luis &copy; 2020
+    </footer>
+</body>
+</html>
