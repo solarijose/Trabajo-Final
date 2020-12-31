@@ -71,6 +71,16 @@ li a {
     text-transform: uppercase;
 }
 
+a {
+    display: inline;
+    padding: 10px 1px;
+    font-size: 1rem;
+    color: #ff0000;
+    text-decoration: none;
+    text-size-adjust: 10px;
+    text-transform: uppercase;
+}
+
 .box {
     background-color: red;
     color:white;
