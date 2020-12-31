@@ -8,17 +8,16 @@ body {
     background-color: black;
     
 }
-
+/* Box */
 * {
     box-sizing: content-box;
 }
 
+/* Contenido */
 a {
     color: #ff0000;
     text-decoration: none;
 }
-
-
 
 h1, h2 {
     font-size: 30px;
@@ -91,6 +90,8 @@ a {
     height: 0px;
 }
 
+/* Boxes */
+
 #primerBox {
     border-top: 5px solid red;
     border-radius: 19px;
@@ -127,6 +128,8 @@ a {
     border-left:solid 12px rgb(255, 255, 255);
     width: 25%;
 }
+
+/* Flex */
 
 .flex-container {
     display: inline-flex;
