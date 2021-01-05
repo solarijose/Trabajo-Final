@@ -6,19 +6,24 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #000000;
     background-color: black;
-    
 }
-
+/* Box */
 * {
     box-sizing: content-box;
 }
 
+/* Contenido */
 a {
     color: #ff0000;
     text-decoration: none;
 }
 
-
+p {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+}
 
 h1, h2 {
     font-size: 30px;
@@ -49,7 +54,6 @@ footer {
     text-decoration: none;
 }
 
-
 td {
     color: #ffffff;
     text-decoration: none;
@@ -71,54 +75,19 @@ li a {
     text-transform: uppercase;
 }
 
-.box {
-    background-color: red;
-    color:white;
-    padding: 1rem;
-    box-shadow: 0 0 5px #000000;
-    border: 4px solid #ffffff;
-    overflow: hidden;
-    height: 0px;
+a {
+    display: inline;
+    padding: 10px 1px;
+    font-size: 1rem;
+    color: #ff0000;
+    text-decoration: none;
+    text-size-adjust: 10px;
+    text-transform: uppercase;
 }
 
-#primerBox {
-    border-top: 5px solid red;
-    border-radius: 19px;
-    background-color: black;
-    font-size: 10px;
-    padding: 1rem;
-    overflow: hidden;
-    padding-bottom: 4rem;
-    margin-bottom: 1rem;;
-    height: 30px;
-    display: inline-block;
+/* Flex */
 
-}
-
-#segundoBox {
-    height: 10px;
-    font-size: 14px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 10px 10px 18px 10px;
-    text-decoration: solid;
-    text-transform:uppercase ;
-    width: 190px;
-}
-
-#tercerBox {
-
-    height: 1px;
-    font-size: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-transform: uppercase;   
-    border-top:solid 5px rgb(255, 31, 2); 
-    border-right:solid 10px rgb(255, 255, 255);
-    border-bottom:solid 7px rgb(230, 8, 8);
-    border-left:solid 12px rgb(255, 255, 255);
-    width: 25%;
-}
-
-.flex-container {
+/* .flex-container {
     display: inline-flex;
     background-color: rgb(7, 6, 6);
     justify-content: center;
@@ -141,6 +110,108 @@ li a {
     line-height: 30px;
     font-size: 25px;
     flex: 1;
-    
-  }
+  } */
   
+.container {
+    /* Para centrar cajas */
+    display:block;
+    max-width: 1100px;
+    margin:auto; /* para centrar */
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.polygon-grid{
+    display: none;
+}
+
+/* Grids */
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+    border: auto;
+}
+
+.grid-container > article {
+    background-color:rgb(113 10 10 / 80%);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+  .grid-item {
+    background-color: rgba(31, 21, 21, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .grid-25 {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-auto-flow: dense;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.box {
+    background-color: rgb(145, 22, 22);
+    color:white;
+    padding: 1rem;
+    box-shadow: 0 0 5px #000000;
+    border: 4px solid #ffffff;
+    overflow: hidden;
+}
+
+
+/* Boxes */
+
+ #primerBox {
+    border-top: 5px solid red;
+    border-radius: 19px;
+    background-color: black;
+    font-size: 10px;
+    padding: 1rem;
+    overflow: hidden;
+    padding-bottom: 4rem;
+    margin-bottom: 1rem;;
+    height: 30px;
+    display: inline-block;
+    
+}
+
+#segundoBox {
+    height: 10px;
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px 10px 18px 10px;
+    text-decoration: solid;
+    text-transform:uppercase ;
+    width: 190px;
+}
+
+#tercerBox {
+    height: 1px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;   
+    border-top:solid 5px rgb(255, 31, 2); 
+    border-right:solid 10px rgb(255, 255, 255);
+    border-bottom:solid 7px rgb(230, 8, 8);
+    border-left:solid 12px rgb(255, 255, 255);
+    width: 25%;
+}
+
+
+.box.firts:hover{
+
+    transform: rotate(5deg) scale(0.8);
+    transform-origin: center;
+}
