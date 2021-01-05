@@ -10,6 +10,7 @@ body {
 /* Box */
 * {
     box-sizing: content-box;
+
 }
 
 /* Contenido */
@@ -50,7 +51,7 @@ h4 {
 }
 
 footer {
-    color: red;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
@@ -83,6 +84,18 @@ a {
     text-decoration: none;
     text-size-adjust: 10px;
     text-transform: uppercase;
+}
+
+th {
+    font-size: 20px;
+    color: blue;
+    text-indent: 20pt;
+
+}
+
+tr  {
+    text-indent: 20pt;
+
 }
 
 /* Flex */
@@ -156,7 +169,7 @@ a {
   .grid-25 {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    grid-auto-flow: dense;
+    grid-auto-flow: column;
     gap: 1rem;
     margin-bottom: 2rem;
 }
@@ -215,3 +228,22 @@ a {
     transform: rotate(5deg) scale(0.8);
     transform-origin: center;
 }
+
+#grad1 {
+    height: 60px ;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(red, rgb(4, 1, 192));
+    margin-right: 1500px;
+  }
+
+
+  .galeria {
+    display:inline-grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 150px;
+  }
+  .galeria-imagen {
+    border: 1px solid;
+  }
